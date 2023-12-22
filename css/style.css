@@ -1,0 +1,446 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+    }
+    
+    .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .logo {
+        font-size: 32px;
+        color: #192252;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    
+    .links {
+        display: flex;
+        gap: 25px;
+    }
+    
+    a {
+        font-size: 18px;
+        color: #192252;
+        font-weight: 500;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    
+    a:hover {
+        color: orangered;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+    
+    .button {
+        border-radius: 4px;
+        background: #0E1734;
+        padding: 14px 16px;
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s;
+        border: none;
+        outline: none;
+    }
+    
+    .button:hover {
+        background-color: #2041ad;
+    }
+    
+    .rooms {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    
+    .roomsLeft {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .roomsLeft h3 {
+        line-height: 72px;
+        color: #192252;
+        font-size: 48px;
+        font-weight: 600;
+    }
+    
+    .roomsLeft p {
+        color: #848FAC;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    
+    .roomsLeft img {
+        width: 51px;
+        height: 51px;
+    }
+    
+    .pausa {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .roomsRight {
+        width: 50%;
+        display: flex;
+        gap: 40px;
+    }
+    
+    .roomsRight img {
+        width: 180px;
+        height: 588px;
+        border-radius: 4px;
+    }
+    
+    .roomsRight img:nth-child(2) {
+        margin-top: 100px;
+    }
+    
+    .videoPlayer {
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: #FAFAFA;
+        padding: 30px;
+        height: 570.451px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 200px;
+        width: 1100px;
+    }
+    
+    .controlVideo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    .controlVideo img {
+        width: 42px;
+    }
+    
+    .controlVideo img:nth-child(4) {
+        width: 700px;
+    }
+    
+    .cabin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .cabinLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        width: 50%;
+    }
+    
+    .cabinLeft h2 {
+        color: #192252;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 54px;
+    }
+    
+    .cabinLeft p {
+        color: #848FAC;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px
+    }
+    
+    .cabinRight {
+        width: 50%;
+    }
+    
+    .cabinRight img {
+        width: 384px;
+        height: 384px;
+        border-radius: 4px;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+    
+    .cabinRight img:hover {
+        box-shadow: 0px 2px 5px #000036;
+    }
+    
+    .reservation {
+        margin-bottom: 200px;
+    }
+    
+    .manyRoom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .manyRoom h3 {
+        color: #192252;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 54px;
+    }
+    
+    .manyRoom p {
+        color: #848FAC;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 200px;
+        margin-top: 100px;
+    }
+    
+    .singleRoom {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 384px;
+        transition: 0.7s;
+        border-radius: 4px;
+    }
+    
+    .singleRoom:hover {
+        background-color: lightgrey;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+    }
+    
+    .singleRoom h3 {
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+    
+    .singleRoom p {
+        color: #848FAC;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    
+    .learn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .learn a {
+        color: #424F7B;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    
+    footer {
+        width: 100%;
+        height: 444px;
+        background: #0B265A;
+    }
+    
+    .footerItems {
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .lastItems {
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+    }
+    
+    .footerItems p {
+        color: #D9DBDE;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 35px;
+        text-transform: capitalize;
+        transition: 0.7s;
+    }
+    
+    .footerItems p:hover {
+        color: orangered;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        cursor: pointer;
+    }
+    
+    .footerItems h4 {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .cootelImg img {
+        width: 32px;
+        height: 32px;
+        transition: 0.7s;
+    }
+    
+    .cootelImg img:hover {
+        cursor: pointer;
+        color: orangered;
+    }
+    
+    .cootelImg {
+        padding-top: 30px;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .cootelsItems h3 {
+        color: #FFF;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    
+    .cootelItem {
+        padding-top: 20px;
+    }
+    
+    .roomItem {
+        padding-top: 20px;
+    }
+    
+    .reservationItem {
+        padding-top: 20px;
+    }
+    
+    .contactItem {
+        padding-top: 20px;
+    }
+    /* .cotels {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .cotels h3 {
+        color: #FFF;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .cotels p {
+        color: #D9DBDE;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    
+    .twLogo img {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .infoRooms {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 250px;
+    }
+    
+    .komnat {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    
+    .komnat h4 {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .komnat p {
+        color: #D9DBDE;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .reserv {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .reserv h4 {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .reserv p {
+        color: #D9DBDE;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .kontakt {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .kontakt h4 {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .kontakt p {
+        color: #D9DBDE;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    } */
